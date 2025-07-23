@@ -17,12 +17,12 @@ const commentSchema = new mongoose.Schema(
       required: true,
       maxLength: 280,
     },
-    likes:[
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "User",
-            default: null,
-          }
+    likes: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        default: null,
+      },
     ],
   },
   { timestamps: true }

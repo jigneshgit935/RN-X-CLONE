@@ -23,10 +23,10 @@ const notificationSchema = new mongoose.Schema(
       default: null,
     },
     comment: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Comment",
-        default: null,
-      },
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Comment",
+      default: null,
+    },
   },
   { timestamps: true }
 );
